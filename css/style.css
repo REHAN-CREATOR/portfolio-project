@@ -1,0 +1,364 @@
+@import "utilities.css";
+:root {
+  --primary: #355a5e;
+  --dark: #635f63;
+  --pure: #fffeff;
+  --ternary: #c8c7c8;
+  --light: #f3f2f3;
+}
+
+body {
+  font-family: sans-serif;
+}
+h1 {
+  color: #33bbbb;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  -webkit-font-smoting: antialiased;
+}
+
+header {
+  background-color: #f1ecea;
+  height: 600px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
+}
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container .branding img {
+  width: 100px;
+  height: 100px;
+}
+
+header nav .left a {
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-decoration: upercase;
+  transition: all 0.3ms ease;
+}
+.branding h1 span {
+  font-family: merriweather, sans-serif;
+}
+header nav {
+  padding: 2rem 0;
+  background-color: rgb(62 50 50 / 18%);
+}
+header nav .left a:hover {
+  color: rgb(78, 194, 248);
+}
+header nav .branding {
+  margin-right: 15rem;
+}
+/*2nd part*/
+.hero .left img {
+  width: 300px;
+  height: 400px;
+}
+#hire button a {
+  color: #070408;
+  text-decoration: none;
+}
+#hire button :hover {
+  color: #33bbbb;
+}
+#home button a {
+  color: #070408;
+  text-decoration: none;
+}
+
+.hero .right {
+  color: #12484e;
+  margin-left: 20px;
+}
+.hero .right h3 {
+  font-size: 2rem;
+  color: #16f7f7;
+  margin-bottom: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.hero .right h2 {
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.3;
+  color: #494349;
+}
+.hero .right h1 span {
+  color: rgb(88, 192, 192);
+}
+.hero .right p {
+  color: #535353;
+}
+/* 3 part */
+section {
+  padding-top: 4rem;
+}
+section.About .photo {
+  width: 400px;
+  height: 400px;
+}
+section.About h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+section.About h1 span {
+  color: aqua;
+}
+section.About .social a img {
+  background: #171617;
+  width: 20px;
+  height: 20px;
+  border-radius: 40%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-right: 0.6rem;
+}
+section.About .social a img:hover {
+  background: red;
+}
+/*sevice secion*/
+section.services {
+  background-color: #f3eff3;
+}
+
+.section-heading {
+  color: #070408;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.8;
+}
+
+.section-heading span {
+  color: aqua;
+}
+
+.section-heading + p {
+  color: #171617;
+  font-family: lato sans-serif;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section.services img {
+  width: 70px;
+  height: 70px;
+}
+.card-wrapper {
+  background-color: #f3eff3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 2rem;
+}
+.card-wrapper .card {
+  background-color: #fffeff;
+  padding: 3rem;
+  margin: 1rem;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.card-wrapper .card img {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.card-wrapper :hover {
+  background-color: #7fb3d1;
+}
+
+.card-wrapper .card h2,
+.card-wrapper .card p {
+  color: rgb(14, 37, 37);
+}
+section.freeluncer {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/mufeed-removebg-preview.png);
+  color: #c8c7c8;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+  padding-bottom: 12rem;
+  margin-top: 10rem;
+}
+section.freeluncer h1 {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+section.freeluncer p {
+  margin-bottom: 2rem;
+  font-family: "lato", sans-serif;
+}
+.slider .slide img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  object-fit: cover;
+  margin: 2rem;
+}
+.slider .slide {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10rem;
+}
+.slider .slide P {
+  font-family: "Lato", sans-serif;
+  color: var(-- ternary);
+  margin-bottom: 1rem;
+}
+.slider-dots .dots {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.slider-dots {
+  margin: 3rem;
+}
+.slider-dots button {
+  font-size: 0%;
+  width: 8px;
+  height: 5px;
+  margin-right: 0.3rem;
+  border: none;
+  outline: none;
+  background-color: rgb(116, 119, 119);
+  border-radius: 50px;
+}
+.dots li.slick-active button {
+  background-color: #33bbbb;
+  width: 20px;
+}
+@media (max-width: 920px) {
+  header #main-nav {
+    display: none;
+  }
+}
+.site-main-wrraper {
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .flex {
+    margin-top: 2rem;
+  }
+}
+/* tab section */
+@media (max-width: 1020px) {
+  .flex {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .humberger {
+    display: block;
+  }
+  .flex {
+    margin-top: -2rem;
+  }
+
+  #home img {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  #home .right {
+    margin-top: 4rem;
+  }
+  header {
+    height: 600px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 92%, 0 100%);
+  }
+}
+
+/* mobile screen */
+@media (max-width: 425px) {
+  .humberger {
+    left: 40rem;
+  }
+  .flex {
+    margin-top: 2rem;
+  }
+  #home .right {
+    margin-top: 0rem;
+  }
+  #home img {
+    margin-top: 0rem;
+  }
+  header {
+    height: 600px;
+    width: 700px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 71% 93%, 0 100%);
+  }
+  .hero .right h2 {
+    font-size: 2rem;
+  }
+  section#About .flex {
+    flex-direction: column;
+    margin-left: 9rem;
+    width: 700px;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+  }
+  section.About .photo {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+  }
+  #About p {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  section.About h1 {
+    font-size: 2.6rem;
+  }
+  .card-wrapper {
+    grid-template-columns: 1fr;
+    width: 70%;
+    margin-left: 6rem;
+  }
+  .site-main-wrraper {
+    width: 700px;
+  }
+  .section-heading + p {
+    margin-bottom: 3rem;
+    font-size: 20px;
+  }
+  .card-wrapper p {
+    margin-bottom: 1rem;
+    font-size: 20px;
+  }
+  section.freeluncer {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 71% 88%, 0 100%);
+    background-size: cover;
+  }
+  section.freeluncer p {
+    font-size: 20px;
+  }
+  .slider .slide P {
+    font-size: 18px;
+  }
+  .slider .slide img {
+    width: 156px;
+    height: 156px;
+  }
+}
+.nav-color {
+  color: #000;
+}
+.navbar-nav a {
+  color: #000;
+}

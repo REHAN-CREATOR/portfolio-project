@@ -1,0 +1,44 @@
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+#hire {
+  outline: none;
+}
+.btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3ms ease;
+}
+.btn-primary {
+  background-color: rgb(99, 100, 100);
+  border-color: rgb(65, 238, 224);
+  margin-right: 30px;
+}
+.btn-primary:hover {
+  border-color: aqua;
+  color: rgb(71, 241, 219);
+  background: transparent;
+}
+.btn-secondary {
+  background-color: transparent;
+  color: #33bbbb;
+  border-color: #71e9e9;
+  /* margin-left: 10px; */
+}
+.btn-secondary:hover {
+  background-color: aqua;
+  color: black;
+}
+.flex-1 {
+  flex: 1;
+}
